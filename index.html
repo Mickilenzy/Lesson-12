@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positborderioning in CSS</title>
+
+        <style>
+            div{
+                right: 30px;
+                border: 3px ridge aquamarine;
+                background-color: white;
+
+                
+            }
+
+            div.absolute{
+                position: absolute;
+                left: 50px;
+                border: 3px dashed greenyellow;
+
+            }
+
+            div.relative{
+                position: relative;
+                left: 100px;
+                border: 3px ridge lightpink;
+            }
+
+            div.fixed {
+                position: fixed;
+                top: 0;
+                right: 20px;
+                width:300px;
+                border: 3px dotted blue;
+            }
+
+            div.sticky {
+                position: sticky;
+                top: 1px;
+                left: 20px;
+                width: 100px;
+                border: 3px solid yellow;
+            }
+        </style>
+        <body style="background-color: lightskyblue;">
+
+        <h2>POSITIONING</h2>
+        <div>
+            Div with no position property
+        </div>
+         <div class="sticky">
+            Div with sticky position property 
+         </div>
+
+         <div class="relative">
+            This div element has position relative;
+            <div class="absolute">
+                Abosolute class DIV
+         </div>
+         <div class="fixed">Div with position property</div>
+
+        </body>
+        
